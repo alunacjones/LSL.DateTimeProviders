@@ -1,6 +1,9 @@
 version: 1.0.{build}
 image: Visual Studio 2022
 configuration: Release
+branches:
+  only:
+    - "master"
 environment:
   CODECOV_TOKEN:
     secure: <appveyor-encrypted-code-cov-token>
